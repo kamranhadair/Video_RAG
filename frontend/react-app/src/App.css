@@ -1,0 +1,149 @@
+:root {
+  --primary: #2563eb;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+h2 { margin-top: 0; font-size: 1.25rem; }
+
+/* Forms */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status */
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.status-badge {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  color: #64748b;
+}
+
+/* Chat */
+.chat-history {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f1f5f9;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.message.user {
+  background: var(--primary);
+  color: white;
+  margin-left: auto;
+}
+
+.message.assistant {
+  background: white;
+  border: 1px solid var(--border);
+  margin-right: auto;
+}
+
+.sources {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.source-item {
+  margin-top: 0.25rem;
+  color: #64748b;
+}
+
+.timestamp {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: var(--primary);
+}
+
+.error {
+  color: #ef4444;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #fee2e2;
+  border-radius: 4px;
+}

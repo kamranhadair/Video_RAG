@@ -1,0 +1,28 @@
+# Core dependencies
+streamlit
+fastapi
+uvicorn[standard]
+pydantic
+
+# Video processing
+yt-dlp
+faster-whisper
+
+# Vector store and embeddings
+faiss-cpu
+sentence-transformers
+
+# LLM providers
+groq
+requests
+langchain-core
+langchain-groq
+
+# LangGraph
+langgraph
+langsmith
+
+# Utilities
+tiktoken
+numpy
+python-dotenv
